@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <h1>JavaScript Practice</h1>
+        <p>To-do list, form validation and API data</p>
+    </header>
+
+    <main class="container">
+
+        <section class="box">
+            <h2>My To-Do List</h2>
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <button id="addBtn">Add</button>
+            </div>
+            <p id="taskError" class="error"></p>
+            <ul id="taskList"></ul>
+            <p id="taskCount" class="count">Total tasks: 0</p>
+        </section>
+
+        <section class="box">
+            <h2>Contact Form</h2>
+            <form id="contactForm" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+                <span class="error" id="nameError"></span>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+                <span class="error" id="emailError"></span>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="10 digit number">
+                <span class="error" id="phoneError"></span>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Minimum 6 characters">
+                <span class="error" id="passwordError"></span>
+
+                <button type="submit">Submit</button>
+                <p id="successMsg" class="success"></p>
+            </form>
+        </section>
+
+        <section class="box wide">
+            <h2>Users From API</h2>
+            <button id="loadBtn">Load Users</button>
+            <p id="apiMsg" class="count"></p>
+            <div id="userList" class="user-grid"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
